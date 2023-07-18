@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import protein from "../../Assets/Projects/protein.jpg";
+import sortingvis from "../../Assets/Projects/sortingvis.svg";
+import portfolio from "../../Assets/Projects/portfolio.svg";
+import texibition from "../../Assets/Projects/texibition.svg";
+import ezeptkart from "../../Assets/Projects/ezeptkart.svg";
 
 function Projects() {
   return (
@@ -23,68 +22,56 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={texibition}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Texibition 2K23"
+              description="Texibition 2k23, website for My college Brainware University's official Tech Fest. This page build with React,Material UI framework."
+              ghLink="https://github.com/AnkanRoychowdhury/Texibition2k23"
+              demoLink="https://texibition2k23.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ezeptkart}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="E-ZeptKart - Flipkart Clone"
+              description="E-ZeptKart's frontend build with React & Material UI framework also used Redux for scalable state management. Backend is built using Node Js & express. Also all the data are dynamically fetched from MongoDB. Dynamic Data operations made possible using REST API."
+              ghLink="https://github.com/AnkanRoychowdhury/E-ZeptKart"
+              demoLink="https://ezeptkart-ecom.onrender.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={portfolio}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Portfolio"
+              description="Personal Portfolio built with React & React Bootstrap.Here I have listed my personal projects, skills, experiences. Also I have added Resume Part where I have showcased my updated Resume."
+              ghLink="https://github.com/AnkanRoychowdhury/portfolio"
+              demoLink="https://ankan-dev.netlify.app/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={protein}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title=" Protein Sequence Classification"
+              description="Developed a BILSTM model using the 'Keras' library to analyze protein feature values and predict protein family names. I was able to achieve an accuracy of 81% ."
+              ghLink="https://github.com/AnkanRoychowdhury/BI-LSTM"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={sortingvis}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Sorting Visualizer"
+              description="Sorting Visualizer application where anyone can generate an array and select a sorting algorithm like Merge Sort, Insertion Sort, Selection Sort etc. and it will sort the array step by step which can be beneficial to understand the Sorting Techniques."
+              ghLink="https://github.com/AnkanRoychowdhury/Sorting-Visualizer"
+              demoLink="https://sorting-visualizer-ankan.netlify.app/"
             />
           </Col>
         </Row>
