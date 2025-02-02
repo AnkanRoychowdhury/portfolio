@@ -1,11 +1,12 @@
 import React from "react";
+import ccLogo from '../images/codeclouds_logo.jpg';
 
 const experienceData = [
   {
     id: 1,
     position: "Software Engineer",
     company: "CodeClouds",
-    logo: "./src/images/codeclouds_logo.jpg", 
+    logo: ccLogo, 
     duration: "Mar 2023 - Present",
     current: true,
     description: "Led backend development for high-scale distributed systems serving millions of users.",
@@ -24,7 +25,7 @@ const experienceData = [
     id: 2,
     position: "Software Engineer Intern",
     company: "CodeClouds",
-    logo: "./src/images/codeclouds_logo.jpg", 
+    logo: ccLogo, 
     duration: "Sep 2022 - Mar 2023",
     current: false,
     description: "Developed and maintained scalable backend services for e-commerce platforms.",
