@@ -59,7 +59,7 @@ const Experience: React.FC = () => {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <img onClick={() => window.open(job.companySite, '_blank')} src={job.logo} alt={`${job.company} Logo`} className="w-10 h-10 rounded-md" />
+                  <img onClick={() => window.open(job.companySite, '_blank')} src={job.logo} alt={`${job.company} Logo`} className="w-10 h-10 rounded-md cursor-pointer" />
                   <div>
                     <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">{job.position}</h3>
                     <p className="text-neutral-600 dark:text-neutral-400 font-semibold text-lg">{job.company}</p>
